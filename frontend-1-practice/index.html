@@ -1,26 +1,96 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Выбор даты и времени</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <!--
-      ЗАДАНИЕ
-      ========
-      Сверстать страницу выбора даты и времени по своему макету.
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Запись в барбершоп | Выбор даты и времени</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
 
-      Пока это только вёрстка. Никакого JavaScript — ни кликов,
-      ни переходов, ни выбора дня. Всё статично.
+    <header class="header">
+        <div class="container header__container">
+            <a href="#" class="logo">BARBER<span>SHOP</span></a>
+            <nav class="nav">
+                <a href="#" class="nav__link">Услуги</a>
+                <a href="#" class="nav__link">Мастера</a>
+                <a href="#" class="nav__link">Контакты</a>
+            </nav>
+        </div>
+    </header>
 
-      Стили пишите в styles.css. Разметку — здесь.
-    -->
+    <main class="main">
+        <div class="container">
+            <h1 class="page-title">Выберите дату и время</h1>
 
-    <div class="page">
-      <!-- Начните отсюда. Разметьте шапку, основную область
-           с календарём и слотами, подвал. -->
-    </div>
-  </body>
+            <div class="booking-layout">
+
+                <section class="calendar">
+                    <div class="calendar__header">
+                        <button class="calendar__arrow" aria-label="Предыдущий месяц">&#8249;</button>
+                        <h2 class="calendar__month">Октябрь 2026</h2>
+                        <button class="calendar__arrow" aria-label="Следующий месяц">&#8250;</button>
+                    </div>
+
+                    <div class="calendar__weekdays">
+                        <span>Пн</span><span>Вт</span><span>Ср</span><span>Чт</span><span>Пт</span><span>Сб</span><span>Вс</span>
+                    </div>
+
+                    <div class="calendar__grid">
+                        <button class="calendar__day calendar__day--disabled" disabled>10</button>
+                        <button class="calendar__day calendar__day--disabled" disabled>11</button>
+                        <button class="calendar__day">12</button>
+                        <button class="calendar__day">13</button>
+                        <button class="calendar__day">14</button>
+                        <button class="calendar__day calendar__day--selected">15</button>
+                        <button class="calendar__day">16</button>
+                        <button class="calendar__day">17</button>
+                        <button class="calendar__day">18</button>
+                        <button class="calendar__day">19</button>
+                        <button class="calendar__day">20</button>
+                        <button class="calendar__day">21</button>
+                        <button class="calendar__day">22</button>
+                        <button class="calendar__day">23</button>
+                        <button class="calendar__day">24</button>
+                        <button class="calendar__day">25</button>
+                        <button class="calendar__day">26</button>
+                        <button class="calendar__day">27</button>
+                        <button class="calendar__day">28</button>
+                        <button class="calendar__day">29</button>
+                        <button class="calendar__day">30</button>
+                        <button class="calendar__day">31</button>
+                    </div>
+                </section>
+
+                <section class="time-slots">
+                    <h2 class="time-slots__title">Свободное время</h2>
+                    <div class="time-slots__grid">
+                        <button class="slot">10:00</button>
+                        <button class="slot">11:00</button>
+                        <button class="slot slot--selected">12:00</button>
+                        <button class="slot">13:00</button>
+                        <button class="slot">14:00</button>
+                        <button class="slot slot--busy" disabled>15:00</button>
+                        <button class="slot">16:00</button>
+                        <button class="slot">17:00</button>
+                        <button class="slot">18:00</button>
+                        <button class="slot">19:00</button>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+    </main>
+
+    <footer class="bottom-bar">
+        <div class="container bottom-bar__container">
+            <div class="bottom-bar__info">
+                <p class="bottom-bar__date">Пятница, 15 октября 2026</p>
+                <p class="bottom-bar__time">Время: 12:00</p>
+            </div>
+            <button class="btn-submit">Далее</button>
+        </div>
+    </footer>
+
+</body>
 </html>
