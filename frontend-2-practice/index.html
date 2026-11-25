@@ -1,14 +1,59 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Выбор даты и времени</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <div class="page">
-      <!-- Перенесите вашу верстку. Удалите статичные данные. Подключите скрипт -->
-    </div>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Запись в барбершоп | Выбор даты и времени</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container header__container">
+            <a href="#" class="logo">BARBER<span>SHOP</span></a>
+            <nav class="nav">
+                <a href="#" class="nav__link">Услуги</a>
+                <a href="#" class="nav__link">Мастера</a>
+                <a href="#" class="nav__link">Контакты</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <h1 class="page-title">Выберите дату и время</h1>
+
+            <div class="booking-layout">
+
+                <section class="calendar">
+                    <div class="calendar__header">
+                        <button class="calendar__arrow" data-action="prev" aria-label="Предыдущий месяц">&#8249;</button>
+                        <h2 class="calendar__month">Октябрь 2026</h2>
+                        <button class="calendar__arrow" data-action="next" aria-label="Следующий месяц">&#8250;</button>
+                    </div>
+                    <div class="calendar__weekdays"></div>
+
+                    <div class="calendar__grid"></div>
+                </section>
+
+                <section class="time-slots">
+                    <h2 class="time-slots__title">Свободное время</h2>
+                    <div class="time-slots__grid"></div>
+                </section>
+
+            </div>
+        </div>
+    </main>
+
+    <footer class="bottom-bar">
+        <div class="container bottom-bar__container">
+            <div class="bottom-bar__info">
+                <p class="bottom-bar__date">Загрузка...</p>
+                <p class="bottom-bar__time">Выберите время</p>
+            </div>
+            <button class="btn-submit">Далее</button>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
 </html>
